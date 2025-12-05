@@ -1,8 +1,14 @@
+# Build artifacts
 bin/
 obj/
 *.o
 
+# Image files (for testing)
 *.img
 
+# Provided course materials (keep locally, don't commit)
 ProvidedMaterials/
+
+# IDE settings
+.vscode/
 
