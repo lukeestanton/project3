@@ -31,6 +31,26 @@ A user-space shell-like utility capable of interpreting FAT32 file system images
 - **Responsibilities**: Implement `rm` and `rmdir` commands
 - **Assigned to**: Luke Stanton
 
+## Development Log
+
+### Luke Stanton
+| Date | Hours | Description |
+|------|-------|-------------|
+| Nov 25 | 3 | Set up project structure, implemented boot sector parsing and `info` command |
+| Nov 26 | 4 | Implemented FAT table reading, cluster navigation, `ls` and `cd` commands |
+| Nov 27 | 3 | Implemented `mkdir` and `creat` commands with directory entry creation |
+| Nov 28 | 4 | Implemented file open/close tracking, `open`, `close`, `lsof` commands |
+| Nov 29 | 3 | Implemented `lseek` and `read` commands with cluster chain traversal |
+| Dec 1 | 4 | Implemented `write` command with file extension support |
+| Dec 2 | 3 | Implemented `mv` command for rename and move operations |
+| Dec 3 | 3 | Implemented `rm` and `rmdir` with cluster deallocation |
+| Dec 4 | 2 | Testing, bug fixes, and error handling improvements |
+| Dec 5 | 2 | Final testing on linprog, documentation |
+
+## Group Meetings
+
+This project was completed individually. Development was done incrementally with regular self-review and testing sessions after each major feature implementation. Testing was performed both locally and on linprog to ensure compatibility.
+
 ## File Listing
 ```
 project3/
