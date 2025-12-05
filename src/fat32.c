@@ -234,7 +234,8 @@ void fat32_set_cluster(DirEntry *entry, uint32_t cluster)
     entry->DIR_FstClusLO = cluster & 0xFFFF;
 }
 
-int fat32_find_entry(uint32_t dir_cluster, const char *name, DirEntry *entry, uint32_t *entry_cluster, uint32_t *entry_offset)
+int fat32_find_entry(uint32_t dir_cluster, const char *name, DirEntry *entry,
+                     uint32_t *entry_cluster, uint32_t *entry_offset)
 {
     char name83[11];
     fat32_name_to_83(name, name83);
